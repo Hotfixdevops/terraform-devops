@@ -40,3 +40,13 @@ variable "private_subnet_cidrs" {
     "10.0.12.0/24"
   ]
 }
+variable "ec2_instance_type" {
+  description = "EC2 instance type for the web server"
+  type        = string
+  default     = "t3.micro"
+}
+variable "ec2_key_name" {
+  description = "AWS EC2 key pair name"
+  type        = string
+  default     = "hotfixdevops"
+}

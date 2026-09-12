@@ -32,3 +32,17 @@ output "nat_eip_public_ip" {
   description = "Public IP address of the NAT Gateway Elastic IP"
   value       = module.vpc.nat_eip_public_ip
 }
+output "ec2_instance_id" {
+  description = "ID of the EC2 web instance"
+  value       = aws_instance.web.id
+}
+
+output "ec2_public_ip" {
+  description = "Public IP address of the EC2 web instance"
+  value       = aws_instance.web.public_ip
+}
+
+output "ec2_public_dns" {
+  description = "Public DNS name of the EC2 web instance"
+  value       = aws_instance.web.public_dns
+}

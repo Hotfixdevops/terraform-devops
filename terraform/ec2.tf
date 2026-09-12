@@ -27,7 +27,7 @@ data "aws_ami" "amazon_linux" {
 resource "aws_instance" "web" {
   ami                  = data.aws_ami.amazon_linux.id
   instance_type        = var.ec2_instance_type
-  key_name             = "hotfixdevops"
+  key_name             = "terraform-devops-laptop2"
   iam_instance_profile = aws_iam_instance_profile.ec2.name
   subnet_id            = module.vpc.public_subnet_ids[0]
 

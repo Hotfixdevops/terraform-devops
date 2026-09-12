@@ -24,3 +24,14 @@ override.tf.json
 Thumbs.db
 .vscode/
 .idea/
+# SSH private keys
+*.pem
+*.ppk
+id_rsa
+id_rsa.pub
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
